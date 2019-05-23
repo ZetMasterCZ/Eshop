@@ -2,6 +2,8 @@
 @import "_variables.scss";
 @import "global.scss";
 @import "utility.scss";
+@import "components/bottom/bottom.scss";
+@import "components/footer/footer.scss";
 
 //loading lib components
 @import "../libs/components/menu/menu.scss";

@@ -1,0 +1,53 @@
+.body
+{
+    display: flex;
+}
+.news
+{
+    width: 100%;
+    background-color: grey;
+    align-content: flex-end;
+    height: 30%;
+    margin-top: 50%;
+    padding-top: 5%;
+    padding-bottom: 4%; 
+}
+.text p
+{
+    padding: 0 25% 0 25%;
+    word-spacing: rem(1);
+}
+.text input
+{
+    margin-top: 1.5%;
+    padding: 0 6% 0 0.5%; 
+}
+.text
+{
+    text-align: center;
+}
+.foot
+{
+    height: rem(330);
+    display: flex;
+    flex-grow: 1;
+    background-color: black;   
+    width: 100%; 
+    padding: 4% 0 4% 0;
+}
+.foot_agora
+{
+    padding-left: 10%;
+    max-width: 37%;
+}
+.foot_text
+{
+    max-width: 25%;
+    max-height: 95%;
+    padding-left: 8%;
+    text-align: left;
+}
+.last
+{
+    padding: 0 0 0 10%;
+}
