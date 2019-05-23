@@ -17,46 +17,6 @@ body {
   flex-direction: column;
   color: #424242; }
 
-.container {
-  width: 100%;
-  flex-grow: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  display: flex;
-  width: 100%;
-  max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: calc(3.57143vw - 0.08929rem);
-  padding-right: calc(3.57143vw - 0.08929rem); }
-  @media (min-width: 37.5em) {
-    .container {
-      padding-left: calc(3.33333vw + 0rem); } }
-  @media (min-width: 56.25em) {
-    .container {
-      padding-left: calc(3.33333vw + 0rem); } }
-  @media (min-width: 75em) {
-    .container {
-      padding-left: 2.5rem; } }
-  @media (min-width: 37.5em) {
-    .container {
-      padding-right: calc(3.33333vw + 0rem); } }
-  @media (min-width: 56.25em) {
-    .container {
-      padding-right: calc(3.33333vw + 0rem); } }
-  @media (min-width: 75em) {
-    .container {
-      padding-right: 2.5rem; } }
-
-.element {
-  height: 2.5rem;
-  border: 0.0625rem solid black;
-  background-color: green;
-  flex-grow: 1;
-  flex: 0 0 33.333333%;
-  padding-top: 33.333333%; }
-
 .heading {
   font-weight: bold;
   font-style: normal;
@@ -114,6 +74,53 @@ body {
   @media (min-width: 75em) {
     .heading--6 {
       font-size: 1.125rem; } }
+
+.container {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 4.375rem;
+  color: whitesmoke;
+  position: fixed; }
+
+.box {
+  height: 4.375rem;
+  flex-grow: 1;
+  background-color: slateblue;
+  border-bottom: 0.0625rem solid whitesmoke;
+  border-right: 0.0625rem solid whitesmoke;
+  max-width: 4.375rem; }
+
+.box__category {
+  height: 4.375rem;
+  flex-grow: 2;
+  background-color: slateblue;
+  border-bottom: 0.0625rem solid whitesmoke;
+  border-right: 0.0625rem solid whitesmoke;
+  max-width: 8.75rem; }
+
+.box__middle {
+  height: 4.375rem;
+  flex-grow: 4;
+  background-color: slateblue;
+  border-bottom: 0.0625rem solid whitesmoke;
+  border-right: 0.0625rem solid whitesmoke; }
+
+.box__topright {
+  height: 4.375rem;
+  flex-grow: 1;
+  background-color: slateblue;
+  border-bottom: 0.0625rem solid whitesmoke;
+  max-width: 4.375rem; }
+
+.section__head {
+  height: 18.75rem;
+  background-color: slateblue;
+  line-height: 18.75rem;
+  color: whitesmoke;
+  text-align: center; }
 
 .menu__controller {
   display: none; }
