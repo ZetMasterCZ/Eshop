@@ -75,7 +75,6 @@ body {
     .heading--6 {
       font-size: 1.125rem; } }
 
-<<<<<<< HEAD
 .body {
   display: flex; }
 
@@ -119,7 +118,7 @@ body {
 
 .last {
   padding: 0 0 0 10%; }
-=======
+
 .container {
   width: 100%;
   flex-grow: 1;
@@ -166,7 +165,6 @@ body {
   line-height: 18.75rem;
   color: whitesmoke;
   text-align: center; }
->>>>>>> 3ab0ed523e121e2db66bd2a70c3004cbdabb542b
 
 .menu__controller {
   display: none; }
