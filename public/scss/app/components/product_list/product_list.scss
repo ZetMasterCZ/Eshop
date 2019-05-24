@@ -1,0 +1,187 @@
+@import "variables.scss";
+
+.ad
+{
+    height: rem(350);
+    width: 100%;
+    //background-color: red;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+.bg
+{
+   flex-grow: 2;
+   border: rem(0.1) solid black; 
+}
+.sm
+{
+    flex-grow: 1;
+    border: rem(0.1) solid black; 
+}
+.up
+{
+    height: rem(40);
+    width: 100%;
+    //background-color: purple;
+    position: absolute;
+    display: flex;
+    margin-top: rem(350);
+    top: 0;
+    left: 0; 
+}
+.filt
+{
+    flex-grow: 5;
+    border: rem(0.1) solid black; 
+}
+.refresh
+{
+    flex-grow: 1;
+    border: rem(0.1) solid black; 
+}
+.sort
+{
+    flex-grow: 5;   
+    border: rem(0.1) solid black; 
+}
+.show
+{
+    flex-grow: 5;    
+    border: rem(0.1) solid black; 
+}
+.list_1
+{
+    flex-grow: 1;    
+    border: rem(0.1) solid black; 
+}
+.list_2
+{
+    flex-grow: 1;    
+    border: rem(0.1) solid black; 
+}
+.compare
+{
+    flex-grow: 3;   
+    border: rem(0.1) solid black; 
+}
+.filters
+{
+    height: rem(860);
+    width: 28.65%;
+    //background-color: purple;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(390);
+    top: 0;
+    left: 0;    
+}
+.cat
+{
+    flex-grow: 2;
+    border: rem(0.1) solid black; 
+}
+.price
+{
+    flex-grow: 1;
+    border: rem(0.1) solid black; 
+}
+.brand
+{
+    flex-grow: 2;
+    border: rem(0.1) solid black; 
+}
+.colors
+{
+    flex-grow: 1;
+    border: rem(0.1) solid black; 
+}
+.size
+{
+    flex-grow: 2;
+    border: rem(0.1) solid black; 
+}
+.products
+{
+    height: rem(860);
+    width: 71.37%;
+    position: absolute;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-top: rem(390);
+    margin-left: 28.65%;
+    top: 0;
+    left: 0; 
+}
+.shoe
+{
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+    width: 33.33333%;
+    padding-top: 20%; 
+    margin: 0 auto;
+}
+.down
+{
+    height: rem(50);
+    width: 100%;
+    //background-color: purple;
+    position: absolute;
+    display: flex;
+    margin-top: rem(1250);
+    top: 0;
+    left: 0; 
+}
+.fill_1
+{
+    flex-grow: 5;
+    border: rem(0.1) solid black; 
+
+}
+.point_left
+{
+    flex-grow: 1;    
+    border: rem(0.1) solid black; 
+}
+.fill_2
+{
+    flex-grow: 5;
+    border: rem(0.1) solid black; 
+}
+.page_1
+{
+    flex-grow: 1;
+    border: rem(0.1) solid black;  
+}
+.page_2
+{
+    flex-grow: 1;
+    border: rem(0.1) solid black; 
+}
+.page_3
+{
+    flex-grow: 1; 
+    border: rem(0.1) solid black; 
+}
+.page_4
+{
+    flex-grow: 1;
+    border: rem(0.1) solid black;  
+}
+.page_5
+{
+    flex-grow: 1;
+    border: rem(0.1) solid black; 
+}
+.fill_3
+{
+    flex-grow: 4; 
+    border: rem(0.1) solid black; 
+}
+.point_right
+{
+    flex-grow: 1;
+    border: rem(0.1) solid black;  
+}
