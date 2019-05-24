@@ -158,7 +158,11 @@ body {
   .main__container--content {
     box-shadow: 0 0.14402rem 0.28533rem -0.05707rem rgba(0, 0, 0, 0.2), 0 0.25rem 0.36413rem 0.02446rem rgba(0, 0, 0, 0.14), 0 0.18207rem 0.42935rem 0.01087rem rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
+<<<<<<< HEAD
     height: 1300px; }
+=======
+    height: 26.25rem; }
+>>>>>>> 61ced9b5349949f22f3b8530e5ac6f63963a2149
 
 .heading {
   display: block;
@@ -225,6 +229,7 @@ body {
     .heading--6 {
       font-size: 1.125rem; } }
 
+<<<<<<< HEAD
 .ad {
   height: 21.875rem;
   width: 100%;
@@ -374,6 +379,70 @@ body {
 .point_right {
   flex-grow: 1;
   border: 0.00625rem solid black; }
+=======
+.cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #ffffff;
+  height: calc(2.27273vw + 2.67045rem);
+  color: grey;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.01875rem;
+  font-family: "Oswald", Verdana, sans-serif;
+  text-align: center;
+  line-height: 450%; }
+  @media (min-width: 75em) {
+    .cart {
+      height: 4.375rem; } }
+
+.cart__button {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  display: block;
+  flex-grow: 1;
+  flex-direction: row;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-bottom: 0.125rem solid lightgray;
+  transition: 500ms; }
+  .cart__button:hover {
+    background-color: #3853d8;
+    color: #ffffff;
+    transition: 500ms;
+    border-bottom: 0.125rem solid #3853d8; }
+
+.cart__items {
+  margin-top: 4.375rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.125rem solid lightgray;
+  height: 8.75rem;
+  width: 100%; }
+
+.cart__total {
+  margin-top: 13.125rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.125rem solid lightgray;
+  height: 8.75rem;
+  width: 100%; }
+>>>>>>> 61ced9b5349949f22f3b8530e5ac6f63963a2149
 
 .menu__controller {
   display: none; }
