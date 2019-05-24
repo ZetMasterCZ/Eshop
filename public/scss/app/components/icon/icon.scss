@@ -1,0 +1,39 @@
+@import "variables.scss";
+
+.icon{
+    display: block;
+    width: 30%;
+    height: 30%;
+
+    &--abs{
+        top: 0;left: 0; bottom: 0; right: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+}
+
+.icon--cart{
+
+    .icon__path{
+        fill: $color-secondary;
+    }
+}
+
+.icon--menu{
+    .icon__path{
+        fill: $color-secondary;
+    }
+}
+
+.icon--search{
+    .icon__path{
+        fill: $color-secondary;
+    }
+}
+
+.icon--profile{
+    .icon__path{
+        fill: $color-secondary;
+    }
+}

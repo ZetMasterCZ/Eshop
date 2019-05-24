@@ -1,19 +1,10 @@
-.heading{
-    font-weight: bold;
-    font-style: normal;
-    font-family: $font-serif;
-
-    &--regular{
-        font-weight: normal;
-    }
-    &--italic{
-        font-style: italic;
-        font-weight: normal;
-    }
+.ratio-keeper-h{
+    display: block;
+    height: 100%;
 }
-@for $i from 1 through 6{
-    #{".heading--"+$i}{
-        @include heading("h"+$i);
-    }
+
+.ratio-keeper-w{
+    display: block;
+    width: 100%;
 }
 

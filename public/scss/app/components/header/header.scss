@@ -1,45 +1,27 @@
-.container{
-    width: 100%;
-    flex-grow: 1;
+@import "variables.scss";
+
+.header{
+    z-index: z-index(header);
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    line-height: rem(70);
-    color: whitesmoke;
-    position: fixed;
-
+    width: 100%;
+    @include linear-interpolation-chain(height, $header-heights);
+    background-color: $header-background-color;
+    border-bottom: rem(2) solid $header-border-color;
+    @include material-box-shadow($header-shadow-depth);
 }
 
-.box{
-    height: rem(70);
+.header__button{
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    &:not(:last-child){
+        border-right: rem(2) solid $header-border-color;    
+    }
+    @at-root .header__middle + .header__button{
+        border-left: rem(2) solid $header-border-color;    
+    }
+}
+.header__middle{
+    height: 100%;
     flex-grow: 1;
-    background-color: slateblue;
-    border-bottom: rem(1) solid whitesmoke;
-    border-right: rem(1) solid whitesmoke;
-    max-width: rem(70);
-}
-
-.box__category{
-    height: rem(70);
-    flex-grow: 2;
-    background-color: slateblue;
-    border-bottom: rem(1) solid whitesmoke;
-    border-right: rem(1) solid whitesmoke;
-    max-width: rem(140);  
-}
-
-.box__middle{
-    height: rem(70);
-    flex-grow: 4;
-    background-color: slateblue;
-    border-bottom: rem(1) solid whitesmoke;
-    border-right: rem(1) solid whitesmoke;
-}
-
-.box__topright{
-    height: rem(70);
-    flex-grow: 1;
-    background-color: slateblue;
-    border-bottom: rem(1) solid whitesmoke;
-    max-width: rem(70);
 }

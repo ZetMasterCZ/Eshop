@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .menu__controller{
     display: none;
     &--main{
@@ -51,7 +53,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: transparentize($color-primary, 0.3);
+    background-color: $menu-background-overlay-color;
     opacity: 0;
     transition-property: opacity;
     transition-duration: 500ms;
@@ -108,12 +110,13 @@
     }
     &--header{
         padding: 0 1em;
-        height: 2.4em;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         cursor: initial;
         border-bottom: 1px solid $color-terciary;
+        background-color: $menu-breadcrumbs-background-color;
+        @include linear-interpolation-chain(height, $menu-breadcrumbs-heights);
     }
 }
 

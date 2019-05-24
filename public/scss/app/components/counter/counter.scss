@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+.counter{
+    z-index: z-index(header-counter);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 7%;
+    left: 45%;
+    height: 1.3em;
+    line-height: 1.3em;
+    padding: 0 0.43em;
+    background-color: $color-quaternary;
+    font-family: $font-monospace;
+    text-align: center;
+    color: $color-secondary;
+    @include border-radius(rem(999999) !important);
+    @include linear-interpolation-chain(font-size,$counter-font-sizes);
+}
