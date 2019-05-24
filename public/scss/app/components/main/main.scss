@@ -35,7 +35,7 @@
     &--content{
         @include material-box-shadow($main-container-shadow-depth);
         background-color: $color-secondary;
-        height: 1300px;
+        height: rem(420);
     }
 }
 
