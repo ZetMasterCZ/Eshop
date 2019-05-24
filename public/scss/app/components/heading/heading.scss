@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+.heading{
+    display: block;
+    width: 100%;
+    color: $heading-color;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: rem(0.3);
+    font-family: $font-sans-serif;
+
+    &--regular{
+        font-weight: normal;
+    }
+    &--italic{
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+    &--center{
+        text-align: center;
+    }
+}
+@for $i from 1 through 6{
+    #{".heading--"+$i}{
+        @include heading("h"+$i);
+    }
+}
+

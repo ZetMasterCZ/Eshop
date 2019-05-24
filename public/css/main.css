@@ -1,8 +1,8 @@
 /*@import "material/buttons.scss";*/
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 html {
-  font-family: "Roboto", Verdana, sans-serif;
+  font-family: "Oswald", Verdana, sans-serif;
   min-height: 100vh;
   font-size: 100%; }
 
@@ -26,6 +26,9 @@ body {
   width: 100%; }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 500;
   display: flex;
   width: 100%;
@@ -96,6 +99,131 @@ body {
   @media (min-width: 75em) {
     .counter {
       font-size: 1rem; } }
+
+.main {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-top: calc(2.27273vw + 2.67045rem); }
+  @media (min-width: 75em) {
+    .main {
+      margin-top: 4.375rem; } }
+
+.main__header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 15.625rem;
+  background-color: #3853d8;
+  padding-bottom: 4.375rem;
+  margin-bottom: -4.375rem;
+  display: flex;
+  align-items: stretch; }
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(3.57143vw - 0.08929rem);
+  padding-right: calc(3.57143vw - 0.08929rem); }
+  @media (min-width: 37.5em) {
+    .main__container {
+      padding-left: calc(3.33333vw + 0rem); } }
+  @media (min-width: 56.25em) {
+    .main__container {
+      padding-left: calc(3.33333vw + 0rem); } }
+  @media (min-width: 75em) {
+    .main__container {
+      padding-left: 2.5rem; } }
+  @media (min-width: 37.5em) {
+    .main__container {
+      padding-right: calc(3.33333vw + 0rem); } }
+  @media (min-width: 56.25em) {
+    .main__container {
+      padding-right: calc(3.33333vw + 0rem); } }
+  @media (min-width: 75em) {
+    .main__container {
+      padding-right: 2.5rem; } }
+  .main__container--content {
+    box-shadow: 0 0.14402rem 0.28533rem -0.05707rem rgba(0, 0, 0, 0.2), 0 0.25rem 0.36413rem 0.02446rem rgba(0, 0, 0, 0.14), 0 0.18207rem 0.42935rem 0.01087rem rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    height: 1300px; }
+
+.heading {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.01875rem;
+  font-family: "Oswald", Verdana, sans-serif; }
+  .heading--regular {
+    font-weight: normal; }
+  .heading--italic {
+    font-style: italic;
+    font-weight: normal; }
+  .heading--center {
+    text-align: center; }
+
+.heading--1 {
+  font-size: calc(1.13636vw + 2.02273rem);
+  margin: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--1 {
+      font-size: 2.875rem; } }
+
+.heading--2 {
+  font-size: calc(0.68182vw + 1.73864rem);
+  margin: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--2 {
+      font-size: 2.25rem; } }
+
+.heading--3 {
+  font-size: calc(0.68182vw + 1.48864rem);
+  margin: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--3 {
+      font-size: 2rem; } }
+
+.heading--4 {
+  font-size: calc(0.45455vw + 1.28409rem);
+  margin: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--4 {
+      font-size: 1.625rem; } }
+
+.heading--5 {
+  font-size: calc(0.45455vw + 1.03409rem);
+  margin: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--5 {
+      font-size: 1.375rem; } }
+
+.heading--6 {
+  font-size: calc(0.22727vw + 0.95455rem);
+  margin: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--6 {
+      font-size: 1.125rem; } }
 
 .menu__controller {
   display: none; }

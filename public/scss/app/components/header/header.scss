@@ -1,12 +1,15 @@
 @import "variables.scss";
 
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: z-index(header);
     display: flex;
     width: 100%;
     @include linear-interpolation-chain(height, $header-heights);
     background-color: $header-background-color;
-    border-bottom: rem(2) solid $header-border-color;
+    border-bottom: rem($header-border-width) solid $header-border-color;
     @include material-box-shadow($header-shadow-depth);
 }
 
@@ -15,10 +18,10 @@
     height: 100%;
     cursor: pointer;
     &:not(:last-child){
-        border-right: rem(2) solid $header-border-color;    
+        border-right: rem($header-border-width) solid $header-border-color;    
     }
     @at-root .header__middle + .header__button{
-        border-left: rem(2) solid $header-border-color;    
+        border-left: rem($header-border-width) solid $header-border-color;    
     }
 }
 .header__middle{

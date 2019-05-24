@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700&subset=latin-ext'); //Lora - serif, regular, regular italic and bold
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap'); //Oswald - sans-serif, regular
+
+$font-sans-serif: 'Oswald',Verdana, sans-serif;
+$font-serif: 'Lora',Georgia, serif;
+$font-monospace: monospace, monospace;
+
+
 //-----z-indexes--
 $z-indexes: (
 menu: 1000,
 menu-background:10,
 menu-container: 20,
 menu-container-content:10,
+
 header: 500,
-header-counter: 50
+header-counter: 50,
+
+main-header: 10,
+main-container: 20
 );
 
 $color-primary: $material-color-grey-900;
