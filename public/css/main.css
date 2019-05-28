@@ -375,6 +375,44 @@ body {
   flex-grow: 1;
   border: 0.00625rem solid black; }
 
+.main__container_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(3.57143vw - 0.08929rem);
+  padding-right: calc(3.57143vw - 0.08929rem); }
+  @media (min-width: 37.5em) {
+    .main__container_cart {
+      padding-left: calc(3.33333vw + 0rem); } }
+  @media (min-width: 56.25em) {
+    .main__container_cart {
+      padding-left: calc(3.33333vw + 0rem); } }
+  @media (min-width: 75em) {
+    .main__container_cart {
+      padding-left: 2.5rem; } }
+  @media (min-width: 37.5em) {
+    .main__container_cart {
+      padding-right: calc(3.33333vw + 0rem); } }
+  @media (min-width: 56.25em) {
+    .main__container_cart {
+      padding-right: calc(3.33333vw + 0rem); } }
+  @media (min-width: 75em) {
+    .main__container_cart {
+      padding-right: 2.5rem; } }
+  .main__container_cart--content_cart {
+    box-shadow: 0 0.14402rem 0.28533rem -0.05707rem rgba(0, 0, 0, 0.2), 0 0.25rem 0.36413rem 0.02446rem rgba(0, 0, 0, 0.14), 0 0.18207rem 0.42935rem 0.01087rem rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    height: 35rem; }
+
 .cart {
   position: absolute;
   top: 0;
@@ -437,25 +475,133 @@ body {
   display: flex;
   height: 8.75rem;
   flex-grow: 3;
-  background-color: lightgray; }
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
 
 .items__priceDefault {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   display: flex;
   height: 8.75rem;
   flex-grow: 1;
-  background-color: gray; }
+  color: lightgrey; }
 
 .items__count {
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
   display: flex;
   height: 8.75rem;
   flex-grow: 2;
-  background-color: lightgrey; }
+  color: #3853d8; }
 
 .items__storno {
+  align-items: center;
+  align-content: center;
+  justify-content: left;
   display: flex;
   height: 8.75rem;
-  flex-grow: 2;
-  background-color: gray; }
+  flex-grow: 2; }
+
+.total__text {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  height: 8.75rem;
+  flex-grow: 6; }
+
+.total__value-text {
+  align-items: center;
+  align-content: center;
+  justify-content: right;
+  display: flex;
+  height: 8.75rem;
+  flex-grow: 0.9;
+  color: black; }
+
+.total__value-number {
+  align-items: center;
+  align-content: center;
+  justify-content: left;
+  display: flex;
+  height: 8.75rem;
+  flex-grow: 1;
+  color: #3853d8; }
+
+.total__refresh {
+  align-items: center;
+  align-content: center;
+  justify-content: left;
+  display: flex;
+  height: 8.75rem;
+  flex-grow: 3.35; }
+
+.cart_next {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #ffffff;
+  height: calc(2.27273vw + 2.67045rem);
+  min-height: 4.375rem;
+  color: grey;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.01875rem;
+  font-family: "Oswald", Verdana, sans-serif;
+  text-align: center;
+  line-height: 450%;
+  margin-top: 30.625rem;
+  height: 4.375rem; }
+  @media (min-width: 75em) {
+    .cart_next {
+      height: 4.375rem; } }
+
+.cart__counter {
+  height: calc(2.27273vw + 2.67045rem);
+  display: flex;
+  border-radius: 3.125rem;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  border: 0.125rem solid lightgray;
+  height: 1.875rem;
+  width: 7.5rem;
+  background-color: white; }
+  @media (min-width: 75em) {
+    .cart__counter {
+      height: 4.375rem; } }
+
+.cart__styled-button {
+  color: grey;
+  outline: none;
+  border-radius: 100%;
+  height: 1.875rem;
+  width: 1.875rem;
+  background: none; }
+
+.cart__items-variable {
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  width: 1.25rem;
+  padding: 2%;
+  background: none; }
+
+.cart__cancel-button {
+  color: grey;
+  outline: none;
+  border-radius: 100%;
+  height: 3.125rem;
+  width: 3.125rem;
+  background: none; }
 
 .menu__controller {
   display: none; }
