@@ -225,6 +225,9 @@ body {
     .heading--6 {
       font-size: 1.125rem; } }
 
+.body {
+  font-family: "Oswald", Verdana, sans-serif; }
+
 .ad {
   height: 21.875rem;
   width: 100%;
@@ -235,11 +238,13 @@ body {
 
 .bg {
   flex-grow: 2;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid black;
+  background-color: #3bb1ff; }
 
 .sm {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid black;
+  background-color: #3853d8; }
 
 .up {
   height: 2.5rem;
@@ -251,36 +256,63 @@ body {
   left: 0; }
 
 .filt {
-  flex-grow: 5;
-  border: 0.00625rem solid black; }
+  flex-grow: 3;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2);
+  padding-right: 9%; }
+
+.filt p {
+  padding: 0 0 0 15%;
+  font-weight: bold;
+  font-size: 0.9375rem;
+  letter-spacing: 0.0625rem; }
 
 .refresh {
-  flex-grow: 1;
-  border: 0.00625rem solid black; }
+  flex-grow: 1.5;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .sort {
-  flex-grow: 5;
-  border: 0.00625rem solid black; }
+  flex-grow: 4;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
+
+.sort p {
+  padding: 0 0 0 15%;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  letter-spacing: 0.09375rem; }
 
 .show {
-  flex-grow: 5;
-  border: 0.00625rem solid black; }
+  flex-grow: 4;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2);
+  padding-right: 6%; }
+
+.show p {
+  padding: 0 0 0 15%;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  letter-spacing: 0.09375rem; }
 
 .list_1 {
-  flex-grow: 1;
-  border: 0.00625rem solid black; }
+  flex-grow: 1.5;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .list_2 {
-  flex-grow: 1;
-  border: 0.00625rem solid black; }
+  flex-grow: 1.5;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .compare {
-  flex-grow: 3;
-  border: 0.00625rem solid black; }
+  flex-grow: 2;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2);
+  padding-right: 5%; }
+
+.compare p {
+  padding: 0 0 0 25%;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  letter-spacing: 0.09375rem; }
 
 .filters {
   height: 53.75rem;
-  width: 28.65%;
+  width: 25%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -290,33 +322,33 @@ body {
 
 .cat {
   flex-grow: 2;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .price {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .brand {
   flex-grow: 2;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .colors {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .size {
   flex-grow: 2;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .products {
   height: 53.75rem;
-  width: 71.37%;
+  width: 75%;
   position: absolute;
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
   margin-top: 24.375rem;
-  margin-left: 28.65%;
+  margin-left: 25%;
   top: 0;
   left: 0; }
 
@@ -337,43 +369,43 @@ body {
 
 .fill_1 {
   flex-grow: 5;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .point_left {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .fill_2 {
   flex-grow: 5;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_1 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_2 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_3 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_4 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_5 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .fill_3 {
   flex-grow: 4;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .point_right {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .cart {
   position: absolute;
