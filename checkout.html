@@ -179,7 +179,7 @@ and open the template in the editor.
         </header>
         <main class="main">
             <header class="main__header">
-                <section class="main__container">
+                <section class="main__container_cart">
                     <h1 class="heading heading--1 heading--center">
                         Your cart
                     </h1>
@@ -191,7 +191,7 @@ and open the template in the editor.
                     </div>
                 </section>
             </header>
-            <section class="main__container main__container--content">
+            <section class="main__container_cart main__container_cart--content_cart">
                 <section class="cart">
                     <span class="cart__button">
                         Checkout
@@ -206,18 +206,54 @@ and open the template in the editor.
 
                 <div class="cart__list">
                     <div class="cart__items">
-                        <div class="items__picture"></div>
-                        <div class="items__priceDefault"></div>
-                        <div class="items__count"></div>
-                        <div class="items__storno"></div>
+                        <div class="items__picture">Picturespace</div>
+                        <div class="items__priceDefault">$ 599.00</div>
+                        <div class="items__count">
+                            <span class="cart__counter">                                         
+                                <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus()">
+                                <input class="cart__items-variable" type="text" size="25" value="1" id="count">
+                                <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus()">  
+                            </span>
+                            $ 599.00 
+                        </div>
+                        <div class="items__storno">
+                                <input class="cart__cancel-button" type="button" value="x">                           
+                        </div>
                     </div>
-                    <div class="cart__items">
 
+                    <div class="cart__items">
+                            <div class="items__picture">Picturespace</div>
+                            <div class="items__priceDefault">$ 230.00</div>
+                            <div class="items__count">
+                                <span class="cart__counter">                                         
+                                    <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus()">
+                                    <input class="cart__items-variable" type="text" size="25" value="1" id="count">
+                                    <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus()">  
+                                </span>
+                                $ 230.00 
+                            </div>
+                            <div class="items__storno">
+                                    <input class="cart__cancel-button" type="button" value="x">                           
+                            </div>
                     </div>
-                    <div class="cart__items">
 
+                    <div class="cart__items">
+                            <div class="total__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="total__value-text">Total Value:</div>
+                            <div class="total__value-number">$ 829.00</div>
+                            <div class="total__refresh">
+                                <input class="cart__cancel-button" type="button" value="x">
+                            </div>
                     </div>
                 </div>
+            
+                
+
+                <section class="cart_next">
+                    <span class="cart__button">
+                        Next step
+                    </span>                    
+                </section>                
 
             </section>
         </main>
