@@ -179,7 +179,7 @@ and open the template in the editor.
         </header>
         <main class="main">
             <header class="main__header">
-                <section class="main__container_cart">
+                <section class="main__container">
                     <h1 class="heading heading--1 heading--center">
                         Your cart
                     </h1>
@@ -193,69 +193,133 @@ and open the template in the editor.
             </header>
             <section class="main__container main__container--content">
                 <section class="cart">
-                    <span class="cart__button">
-                        Checkout
-                    </span>
-                    <span class="cart__button">
-                        Shipping information
-                    </span>
-                    <span class="cart__button">
-                        Payment
-                    </span>
-                </section>
+                    <section class="cart__breadcrumbs">
+                        <a href="#" class="cart__breadcrumb cart__breadcrumb--active">
+                            Checkout
+                        </a>
+                        <a href="#" class="cart__breadcrumb cart__breadcrumb--disabled">
+                            Shipping information
+                        </a>
+                        <a href="#" class="cart__breadcrumb cart__breadcrumb--disabled">
+                            Payment
+                        </a>
+                    </section>
+                    <div class="cart__list">
+                        <div class="cart__item">
 
-                <div class="cart__list">
-                    <div class="cart__items">
-                        <div class="items__picture">Picturespace</div>
-                        <div class="items__priceDefault">$ 599.00</div>
-                        <div class="items__count">
-                            <span class="cart__counter">                                         
-                                <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus()">
-                                <input class="cart__items-variable" type="text" size="25" value="1" id="count">
-                                <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus()">  
-                            </span>
-                            $ 599.00 
                         </div>
-                        <div class="items__storno">
-                                <input class="cart__cancel-button" type="button" value="x">                           
-                        </div>
-                    </div>
+                        <div class="cart__item">
 
-                    <div class="cart__items">
+                        </div>
+                        <div class="cart__item">
+
+                        </div>
+                        <div class="cart__item">
+
+                        </div>
+                        <div class="cart__items">
                             <div class="items__picture">Picturespace</div>
                             <div class="items__priceDefault">$ 230.00</div>
                             <div class="items__count">
                                 <span class="cart__counter">                                         
-                                    <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus()">
+                                    <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus(this)">
                                     <input class="cart__items-variable" type="text" size="25" value="1" id="count">
-                                    <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus()">  
+                                    <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus(this)">  
                                 </span>
                                 $ 230.00 
                             </div>
                             <div class="items__storno">
-                                    <input class="cart__cancel-button" type="button" value="x">                           
+                                <input class="cart__cancel-button" type="button" value="x">                           
                             </div>
-                    </div>
-
-                    <div class="cart__items">
-                            <div class="total__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                            <div class="total__value-text">Total Value:</div>
-                            <div class="total__value-number">$ 829.00</div>
-                            <div class="total__refresh">
-                                <input class="cart__cancel-button" type="button" value="x">
+                        </div>
+                        <div class="cart__items">
+                            <div class="items__picture">Picturespace</div>
+                            <div class="items__priceDefault">$ 230.00</div>
+                            <div class="items__count">
+                                <span class="cart__counter">                                         
+                                    <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus(this)">
+                                    <input class="cart__items-variable" type="text" size="25" value="1" id="count">
+                                    <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus(this)">  
+                                </span>
+                                $ 230.00 
                             </div>
+                            <div class="items__storno">
+                                <input class="cart__cancel-button" type="button" value="x">                           
+                            </div>
+                        </div>
+                        <div class="cart__items">
+                            <div class="items__picture">Picturespace</div>
+                            <div class="items__priceDefault">$ 230.00</div>
+                            <div class="items__count">
+                                <span class="cart__counter">                                         
+                                    <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus(this)">
+                                    <input class="cart__items-variable" type="text" size="25" value="1" id="count">
+                                    <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus(this)">  
+                                </span>
+                                $ 230.00 
+                            </div>
+                            <div class="items__storno">
+                                <input class="cart__cancel-button" type="button" value="x">                           
+                            </div>
+                        </div>
+                        <div class="cart__items">
+                            <div class="items__picture">Picturespace</div>
+                            <div class="items__priceDefault">$ 230.00</div>
+                            <div class="items__count">
+                                <span class="cart__counter">                                         
+                                    <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus(this)">
+                                    <input class="cart__items-variable" type="text" size="25" value="1" id="count">
+                                    <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus(this)">  
+                                </span>
+                                $ 230.00 
+                            </div>
+                            <div class="items__storno">
+                                <input class="cart__cancel-button" type="button" value="x">                           
+                            </div>
+                        </div>
+                        <div class="cart__items">
+                            <div class="items__picture">Picturespace</div>
+                            <div class="items__priceDefault">$ 230.00</div>
+                            <div class="items__count">
+                                <span class="cart__counter">                                         
+                                    <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus(this)">
+                                    <input class="cart__items-variable" type="text" size="25" value="1" id="count">
+                                    <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus(this)">  
+                                </span>
+                                $ 230.00 
+                            </div>
+                            <div class="items__storno">
+                                <input class="cart__cancel-button" type="button" value="x">                           
+                            </div>
+                        </div>
+                        <div class="cart__items">
+                            <div class="items__picture">Picturespace</div>
+                            <div class="items__priceDefault">$ 230.00</div>
+                            <div class="items__count">
+                                <span class="cart__counter">                                         
+                                    <input class="cart__styled-button" type="button" value="-" id="minus" onclick="minus(this)">
+                                    <input class="cart__items-variable" type="text" size="25" value="1" id="count">
+                                    <input class="cart__styled-button" type="button" value="+" id="plus" onclick="plus(this)">  
+                                </span>
+                                $ 230.00 
+                            </div>
+                            <div class="items__storno">
+                                <input class="cart__cancel-button" type="button" value="x">                           
+                            </div>
+                        </div>
+
+
                     </div>
-                </div>
-            
-                
-
-                <section class="cart_next">
-                    <span class="cart__button">
-                        Next step
-                    </span>                    
-                </section>                
-
+                    <section class="cart__bottom">
+                        <span class="cart__button">
+                            Next step
+                        </span>                    
+                    </section>        
+                </section>
             </section>
         </main>
+        <script src="public/scss/app/components/cart/scripts.js" type="text/javascript">
+
+        </script>
     </body>
 </html>

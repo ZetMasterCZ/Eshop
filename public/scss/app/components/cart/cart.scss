@@ -1,86 +1,57 @@
 @import "variables.scss";
 
-
-//main container
-
-.main__container_cart{
+//top part
+.cart{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    position: relative;
-    z-index: z-index(main-container);
-    @include container;
-
-
-    &--content_cart{
-        @include material-box-shadow($main-container-shadow-depth);
-        background-color: $color-secondary;
-        height: rem(560);
-    }
-}
-
-
-//top part
-
-
-.cart{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: z-index(header);
-    display: flex;
-    flex-direction: row;
     width: 100%;
     background-color: $color-secondary;
-    @include linear-interpolation-chain(height, $header-heights);
-    min-height: rem(70);
-    color: grey;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: rem(0.3);
-    font-family: "Oswald", Verdana, sans-serif;
-    text-align: center;
-    line-height: 450%;
 }
 
-.cart__button{
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+.cart__breadcrumbs{
+    width: 100%;
+    height: rem(70);
+    display: flex;
+
+}
+
+.cart__breadcrumb{
     position: relative;
-    height: 100%;
-    display: block;
+    display: flex;
     flex-grow: 1;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     cursor: pointer;
     background-color: $color-secondary;
-    border-bottom: rem($header-border-width) solid lightgray;
     transition: $box-transition-time;
+    text-decoration: none;
+    border-bottom: rem(2) solid $cart-breadcrumb-border-color;
+    
+    &:not(:last-child){
+        border-right: rem(2) solid $cart-breadcrumb-border-color;
+    }
 
-    &:hover{
+    &:not(.cart__breadcrumb--disabled):hover,&--active{
+        color: $cart-breadcrumb-active-color;
         background-color: $color-terciary; 
-        color: $heading-color;
-        transition: $box-transition-time;
-        border-bottom: rem($header-border-width) solid $color-terciary;     
+    }
+
+    &--disabled{
+        cursor: initial;
+        color: $cart-breadcrumb-disabled-color;
+        background-color: $cart-breadcrumb-disabled-background-color;
     }
 }
+
 
 
 //middle part whole
 
 
 .cart__list{
-    margin-top: rem(70);
-    position: absolute;
-    top: 0;
-    left:0;
     display: flex;
     flex-direction: column;
-    height: rem(1400);
-        width: 100%;
 }
 
 

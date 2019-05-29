@@ -25,6 +25,18 @@ body {
   display: block;
   width: 100%; }
 
+.breadcrumbs__item {
+  position: relative;
+  text-decoration: none; }
+  .breadcrumbs__item:not(:last-child) {
+    margin-right: 1.25rem; }
+    .breadcrumbs__item:not(:last-child)::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -1.25rem;
+      content: ">"; }
+
 .header {
   position: fixed;
   top: 0;
@@ -134,11 +146,11 @@ body {
   width: 100%;
   max-width: 80rem;
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px; }
+  margin-right: auto; }
   .main__container--content {
     box-shadow: 0 0.14402rem 0.28533rem -0.05707rem rgba(0, 0, 0, 0.2), 0 0.25rem 0.36413rem 0.02446rem rgba(0, 0, 0, 0.14), 0 0.18207rem 0.42935rem 0.01087rem rgba(0, 0, 0, 0.12);
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    margin-bottom: 200px; }
   .main__container--row {
     flex-direction: row; }
 
@@ -514,95 +526,42 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
 
-.main__container_cart {
+.cart {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  position: relative;
-  z-index: 20;
-  display: flex;
   width: 100%;
-  max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: calc(3.57143vw - 0.08929rem);
-  padding-right: calc(3.57143vw - 0.08929rem); }
-  @media (min-width: 37.5em) {
-    .main__container_cart {
-      padding-left: calc(3.33333vw + 0rem); } }
-  @media (min-width: 56.25em) {
-    .main__container_cart {
-      padding-left: calc(3.33333vw + 0rem); } }
-  @media (min-width: 75em) {
-    .main__container_cart {
-      padding-left: 2.5rem; } }
-  @media (min-width: 37.5em) {
-    .main__container_cart {
-      padding-right: calc(3.33333vw + 0rem); } }
-  @media (min-width: 56.25em) {
-    .main__container_cart {
-      padding-right: calc(3.33333vw + 0rem); } }
-  @media (min-width: 75em) {
-    .main__container_cart {
-      padding-right: 2.5rem; } }
-  .main__container_cart--content_cart {
-    box-shadow: 0 0.14402rem 0.28533rem -0.05707rem rgba(0, 0, 0, 0.2), 0 0.25rem 0.36413rem 0.02446rem rgba(0, 0, 0, 0.14), 0 0.18207rem 0.42935rem 0.01087rem rgba(0, 0, 0, 0.12);
-    background-color: #ffffff;
-    height: 35rem; }
+  background-color: #ffffff; }
 
-.cart {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 500;
-  display: flex;
-  flex-direction: row;
+.cart__breadcrumbs {
   width: 100%;
-  background-color: #ffffff;
-  height: calc(2.27273vw + 2.67045rem);
-  min-height: 4.375rem;
-  color: grey;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.01875rem;
-  font-family: "Oswald", Verdana, sans-serif;
-  text-align: center;
-  line-height: 450%; }
-  @media (min-width: 75em) {
-    .cart {
-      height: 4.375rem; } }
+  height: 4.375rem;
+  display: flex; }
 
-.cart__button {
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+.cart__breadcrumb {
   position: relative;
-  height: 100%;
-  display: block;
+  display: flex;
   flex-grow: 1;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   cursor: pointer;
   background-color: #ffffff;
-  border-bottom: 0.125rem solid lightgray;
-  transition: 500ms; }
-  .cart__button:hover {
-    background-color: #3853d8;
+  transition: 500ms;
+  text-decoration: none;
+  border-bottom: 0.125rem solid #f0f0f0; }
+  .cart__breadcrumb:not(:last-child) {
+    border-right: 0.125rem solid #f0f0f0; }
+  .cart__breadcrumb:not(.cart__breadcrumb--disabled):hover, .cart__breadcrumb--active {
     color: #ffffff;
-    transition: 500ms;
-    border-bottom: 0.125rem solid #3853d8; }
+    background-color: #3853d8; }
+  .cart__breadcrumb--disabled {
+    cursor: initial;
+    color: #848484;
+    background-color: #f8f8f8; }
 
 .cart__list {
-  margin-top: 4.375rem;
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
-  flex-direction: column;
-  height: 87.5rem;
-  width: 100%; }
+  flex-direction: column; }
 
 .cart__items {
   display: flex;

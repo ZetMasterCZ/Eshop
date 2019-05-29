@@ -1,11 +1,9 @@
-$header-heights: (
-xl: 70,
-s: 50
-);
+$cart-breadcrumb-border-color: $color-secondary-darker;
 
-$header-background-color: $color-terciary;
-$header-border-color: $color-terciary-lighter;
-$header-border-width: 2;
-$header-shadow-depth: 4;
+$cart-breadcrumb-active-color: $color-secondary;
 
-$box-transition-time: 500ms,
+$cart-breadcrumb-disabled-color: $color-primary-light;
+$cart-breadcrumb-disabled-background-color: $color-primary-lighter;
+
+
+$box-transition-time: 500ms;

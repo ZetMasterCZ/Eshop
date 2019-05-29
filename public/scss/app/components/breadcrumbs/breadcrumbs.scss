@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.breadcrumbs{
+
+}
+
+.breadcrumbs__item{
+    position: relative;
+    text-decoration: none;
+
+
+
+    &:not(:last-child){
+        margin-right: rem(20);
+
+
+        &::after{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: rem(-20);
+            content: ">";
+        }
+
+    }
+
+}
