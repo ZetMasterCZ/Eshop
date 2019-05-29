@@ -225,6 +225,47 @@ body {
     .heading--6 {
       font-size: 1.125rem; } }
 
+.main__container_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(3.57143vw - 0.08929rem);
+  padding-right: calc(3.57143vw - 0.08929rem); }
+  @media (min-width: 37.5em) {
+    .main__container_product {
+      padding-left: calc(3.33333vw + 0rem); } }
+  @media (min-width: 56.25em) {
+    .main__container_product {
+      padding-left: calc(3.33333vw + 0rem); } }
+  @media (min-width: 75em) {
+    .main__container_product {
+      padding-left: 2.5rem; } }
+  @media (min-width: 37.5em) {
+    .main__container_product {
+      padding-right: calc(3.33333vw + 0rem); } }
+  @media (min-width: 56.25em) {
+    .main__container_product {
+      padding-right: calc(3.33333vw + 0rem); } }
+  @media (min-width: 75em) {
+    .main__container_product {
+      padding-right: 2.5rem; } }
+  .main__container_product--content {
+    box-shadow: 0 0.14402rem 0.28533rem -0.05707rem rgba(0, 0, 0, 0.2), 0 0.25rem 0.36413rem 0.02446rem rgba(0, 0, 0, 0.14), 0 0.18207rem 0.42935rem 0.01087rem rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    height: 1740px; }
+
+.body {
+  font-family: "Oswald", Verdana, sans-serif; }
+
 .ad {
   height: 21.875rem;
   width: 100%;
@@ -235,11 +276,13 @@ body {
 
 .bg {
   flex-grow: 2;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid black;
+  background-color: #3bb1ff; }
 
 .sm {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid black;
+  background-color: #3853d8; }
 
 .up {
   height: 2.5rem;
@@ -251,36 +294,60 @@ body {
   left: 0; }
 
 .filt {
-  flex-grow: 5;
-  border: 0.00625rem solid black; }
+  flex-grow: 3;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
+
+.filt p {
+  padding: 0 0 0 15%;
+  font-weight: bold;
+  font-size: 0.9375rem;
+  letter-spacing: 0.0625rem; }
 
 .refresh {
-  flex-grow: 1;
-  border: 0.00625rem solid black; }
+  flex-grow: 1.5;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .sort {
-  flex-grow: 5;
-  border: 0.00625rem solid black; }
+  flex-grow: 4;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
+
+.sort p {
+  padding: 0 0 0 15%;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  letter-spacing: 0.09375rem; }
 
 .show {
-  flex-grow: 5;
-  border: 0.00625rem solid black; }
+  flex-grow: 4;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
+
+.show p {
+  padding: 0 0 0 15%;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  letter-spacing: 0.09375rem; }
 
 .list_1 {
-  flex-grow: 1;
-  border: 0.00625rem solid black; }
+  flex-grow: 1.5;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .list_2 {
-  flex-grow: 1;
-  border: 0.00625rem solid black; }
+  flex-grow: 1.5;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .compare {
-  flex-grow: 3;
-  border: 0.00625rem solid black; }
+  flex-grow: 2;
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
+
+.compare p {
+  padding: 0 0 0 25%;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  letter-spacing: 0.09375rem; }
 
 .filters {
-  height: 53.75rem;
-  width: 28.65%;
+  height: 81.25rem;
+  width: 25%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -290,33 +357,69 @@ body {
 
 .cat {
   flex-grow: 2;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 0%; }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.dropdown h3 {
+  font-size: 0.9375rem;
+  letter-spacing: 0.125rem; }
+
+.dropdown-content {
+  display: none;
+  font-size: 0.8125rem;
+  position: absolute;
+  background-color: white;
+  overflow: auto;
+  width: 9.375rem;
+  max-height: 16.25rem;
+  text-align: left;
+  z-index: 1;
+  letter-spacing: 0.0625rem; }
+
+.dropdown-content li {
+  color: black;
+  padding: 0 0 0 0;
+  text-decoration: none;
+  display: block; }
+
+.dropdown > span:focus ~ ul {
+  display: block; }
 
 .price {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .brand {
   flex-grow: 2;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .colors {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .size {
   flex-grow: 2;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .products {
-  height: 53.75rem;
-  width: 71.37%;
+  height: 81.25rem;
+  width: 75%;
   position: absolute;
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
   margin-top: 24.375rem;
-  margin-left: 28.65%;
+  margin-left: 25%;
   top: 0;
   left: 0; }
 
@@ -326,54 +429,62 @@ body {
   padding-top: 20%;
   margin: 0 auto; }
 
+.shoe p {
+  padding: 0 0 0 10%; }
+
+.shoe:hover {
+  background-color: rgba(0, 0, 255, 0.507);
+  color: white; }
+
 .down {
   height: 3.125rem;
   width: 100%;
   position: absolute;
   display: flex;
-  margin-top: 78.125rem;
+  margin-top: 105.625rem;
   top: 0;
-  left: 0; }
+  left: 0;
+  text-align: center; }
 
 .fill_1 {
   flex-grow: 5;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .point_left {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .fill_2 {
   flex-grow: 5;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_1 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_2 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_3 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_4 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .page_5 {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .fill_3 {
   flex-grow: 4;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .point_right {
   flex-grow: 1;
-  border: 0.00625rem solid black; }
+  border: 0.00625rem solid rgba(0, 0, 0, 0.2); }
 
 .main__container_cart {
   display: flex;

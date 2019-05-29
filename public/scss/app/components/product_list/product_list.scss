@@ -1,10 +1,29 @@
 @import "variables.scss";
+.main__container_product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: z-index(main-container);
+    @include container;
 
+
+    &--content{
+        @include material-box-shadow($main-container-shadow-depth);
+        background-color: $color-secondary;
+        height: 1740px;
+    }
+}
+.body
+{
+    font-family: "Oswald", Verdana, sans-serif;
+}
 .ad
 {
     height: rem(350);
     width: 100%;
-    //background-color: red;
     position: absolute;
     display: flex;
     top: 0;
@@ -13,18 +32,19 @@
 .bg
 {
    flex-grow: 2;
-   border: rem(0.1) solid black; 
+   border: rem(0.1) solid black;
+   background-color: rgb(59, 177, 255); 
 }
 .sm
 {
     flex-grow: 1;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid black;
+    background-color: #3853d8; 
 }
 .up
 {
     height: rem(40);
     width: 100%;
-    //background-color: purple;
     position: absolute;
     display: flex;
     margin-top: rem(350);
@@ -33,44 +53,75 @@
 }
 .filt
 {
-    flex-grow: 5;
-    border: rem(0.1) solid black; 
+    flex-grow: 3;
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+    //padding-right: 10%; 
+}
+.filt p
+{
+    padding: 0 0 0 15%; 
+    font-weight: bold;
+    font-size: rem(15);
+    letter-spacing: rem(1);
 }
 .refresh
 {
-    flex-grow: 1;
-    border: rem(0.1) solid black; 
+    flex-grow: 1.5;
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
 .sort
 {
-    flex-grow: 5;   
-    border: rem(0.1) solid black; 
+    flex-grow: 4;   
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+    //padding-right: 5%;
+}
+.sort p
+{
+    padding: 0 0 0 15%;
+    font-weight: bold;
+    font-size: rem(13);
+    letter-spacing: rem(1.5);
 }
 .show
 {
-    flex-grow: 5;    
-    border: rem(0.1) solid black; 
+    flex-grow: 4;    
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
+    //padding-right: 10%;
+}
+.show p
+{
+    padding: 0 0 0 15%;
+    font-weight: bold;
+    font-size: rem(13);
+    letter-spacing: rem(1.5);
 }
 .list_1
 {
-    flex-grow: 1;    
-    border: rem(0.1) solid black; 
+    flex-grow: 1.5;    
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
 }
 .list_2
 {
-    flex-grow: 1;    
-    border: rem(0.1) solid black; 
+    flex-grow: 1.5;    
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
 .compare
 {
-    flex-grow: 3;   
-    border: rem(0.1) solid black; 
+    flex-grow: 2;   
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+   // padding-right: 5%; 
+}
+.compare p
+{
+    padding: 0 0 0 25%;
+    font-weight: bold;
+    font-size: rem(13);
+    letter-spacing: rem(1.5);
 }
 .filters
 {
-    height: rem(860);
-    width: 28.65%;
-    //background-color: purple;
+    height: rem(1300);
+    width: 25%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -81,38 +132,79 @@
 .cat
 {
     flex-grow: 2;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+    text-align: left;
+    padding-left: 10%; 
+    padding-top: 0%;
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.dropdown h3
+{
+    font-size: rem(15);
+    letter-spacing: rem(2);
+}
+.dropdown-content
+{
+    display: none;
+    font-size: rem(13);
+    position: absolute;
+    background-color: white;
+    overflow: auto;
+    width: rem(150);
+    max-height: rem(260);
+    text-align: left;
+    z-index: 1;
+    letter-spacing: rem(1);
+}
+.dropdown-content li
+{
+    color: black;
+    padding: 0 0 0 0;
+    text-decoration: none;
+    display: block;
+}
+.dropdown > span:focus ~ ul
+{
+    display: block;
 }
 .price
 {
     flex-grow: 1;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
 .brand
 {
     flex-grow: 2;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
 .colors
 {
     flex-grow: 1;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
 .size
 {
     flex-grow: 2;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
 .products
 {
-    height: rem(860);
-    width: 71.37%;
+    height: rem(1300);
+    width: 75%;
     position: absolute;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     margin-top: rem(390);
-    margin-left: 28.65%;
+    margin-left: 25%;
     top: 0;
     left: 0; 
 }
@@ -123,65 +215,74 @@
     padding-top: 20%; 
     margin: 0 auto;
 }
+.shoe p
+{
+    padding: 0 0 0 10%;   
+}
+.shoe:hover
+{
+    background-color: rgba(0, 0, 255, 0.507);
+    color: white;
+}
 .down
 {
     height: rem(50);
     width: 100%;
-    //background-color: purple;
     position: absolute;
     display: flex;
-    margin-top: rem(1250);
+    margin-top: rem(1690);
     top: 0;
     left: 0; 
+    text-align: center;
 }
 .fill_1
 {
     flex-grow: 5;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
 
 }
 .point_left
 {
     flex-grow: 1;    
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
 }
 .fill_2
 {
     flex-grow: 5;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
 .page_1
 {
     flex-grow: 1;
-    border: rem(0.1) solid black;  
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);  
 }
 .page_2
 {
     flex-grow: 1;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
 }
 .page_3
 {
     flex-grow: 1; 
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
 }
 .page_4
 {
     flex-grow: 1;
-    border: rem(0.1) solid black;  
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);  
 }
 .page_5
 {
     flex-grow: 1;
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
 }
 .fill_3
 {
     flex-grow: 4; 
-    border: rem(0.1) solid black; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
 .point_right
 {
     flex-grow: 1;
-    border: rem(0.1) solid black;  
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
