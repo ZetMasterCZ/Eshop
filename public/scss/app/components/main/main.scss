@@ -29,13 +29,17 @@
     justify-content: center;
     position: relative;
     z-index: z-index(main-container);
-    @include container;
+    @include container-pl;
+    margin-bottom: 200px;
 
 
     &--content{
         @include material-box-shadow($main-container-shadow-depth);
         background-color: $color-secondary;
-        height: 1300px;
+    }
+    
+    &--row{
+        flex-direction: row;
     }
 }
 

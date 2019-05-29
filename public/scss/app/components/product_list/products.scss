@@ -1,0 +1,34 @@
+@import "variables.scss";
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products__item{
+    width: 50%;  
+   
+    @include media(l){
+        width: 50%;  
+        &:not(:nth-child(2n)){
+            border-right: 1px solid black;
+        }
+        &:not(:nth-last-child(-n+2)){
+            border-bottom: 1px solid black;
+        }
+    }
+
+    @include media(xl){
+        width: (100% / 3);
+        &:not(:nth-child(2n)),&:not(:nth-last-child(-n+2)){
+            border: none;
+        }
+        &:not(:nth-child(3n)){
+            border-right: 1px solid transparentize($color-primary,0.1);
+        }
+        &:not(:nth-last-child(-n+3)){
+            border-bottom: 1px solid black;
+        }
+    }
+}
