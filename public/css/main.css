@@ -603,6 +603,118 @@ body {
   width: 3.125rem;
   background: none; }
 
+.shipping__content {
+  margin-top: 4.375rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  height: 26.25rem;
+  width: 100%;
+  border-bottom: 0.125rem solid lightgray;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.01875rem;
+  font-family: "Oswald", Verdana, sans-serif; }
+
+.shipping__section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 26.25rem;
+  width: 50%;
+  border-right: 0.125rem solid lightgray;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly; }
+
+.shipping__title {
+  font-size: 1.25rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 0.3125rem;
+  width: 35%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: -3.125rem; }
+
+.shipping__udnertext {
+  font-size: 0.9375rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 0.0625rem;
+  width: 35%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: #3853d8;
+  margin-top: -3.75rem; }
+
+.shipping__signinbox {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 11.25rem;
+  width: 35%;
+  border-radius: 10%;
+  border: 0.125rem solid lightgray;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly; }
+
+.shipping__signinbox-info {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 3.75rem;
+  width: 100%;
+  border-bottom: 0.125rem solid lightgray;
+  align-content: center;
+  align-items: center;
+  justify-content: center; }
+
+.shipping__signinbox-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 3.75rem;
+  width: 100%;
+  cursor: pointer;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%; }
+  .shipping__signinbox-button:hover {
+    background-color: #3853d8;
+    color: #ffffff;
+    transition: 500ms; }
+
+input[type=shipping_text] {
+  width: 90%;
+  padding: 12px 20px;
+  border: none;
+  color: lightgrey; }
+
 .menu__controller {
   display: none; }
   .menu__controller--main:checked + .menu {
