@@ -1,4 +1,21 @@
 @import "variables.scss";
+.main__container_product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: z-index(main-container);
+    @include container;
+
+
+    &--content{
+        @include material-box-shadow($main-container-shadow-depth);
+        background-color: $color-secondary;
+        height: 1740px;
+    }
+}
 .body
 {
     font-family: "Oswald", Verdana, sans-serif;
@@ -38,7 +55,7 @@
 {
     flex-grow: 3;
     border: rem(0.1) solid rgba(0, 0, 0, 0.200);
-    padding-right: 9%; 
+    //padding-right: 10%; 
 }
 .filt p
 {
@@ -56,6 +73,7 @@
 {
     flex-grow: 4;   
     border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+    //padding-right: 5%;
 }
 .sort p
 {
@@ -68,7 +86,7 @@
 {
     flex-grow: 4;    
     border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
-    padding-right: 6%;
+    //padding-right: 10%;
 }
 .show p
 {
@@ -91,7 +109,7 @@
 {
     flex-grow: 2;   
     border: rem(0.1) solid rgba(0, 0, 0, 0.200);
-    padding-right: 5%; 
+   // padding-right: 5%; 
 }
 .compare p
 {
@@ -102,7 +120,7 @@
 }
 .filters
 {
-    height: rem(860);
+    height: rem(1300);
     width: 25%;
     position: absolute;
     display: flex;
@@ -115,6 +133,47 @@
 {
     flex-grow: 2;
     border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+    text-align: left;
+    padding-left: 10%; 
+    padding-top: 0%;
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.dropdown h3
+{
+    font-size: rem(15);
+    letter-spacing: rem(2);
+}
+.dropdown-content
+{
+    display: none;
+    font-size: rem(13);
+    position: absolute;
+    background-color: white;
+    overflow: auto;
+    width: rem(150);
+    max-height: rem(260);
+    text-align: left;
+    z-index: 1;
+    letter-spacing: rem(1);
+}
+.dropdown-content li
+{
+    color: black;
+    padding: 0 0 0 0;
+    text-decoration: none;
+    display: block;
+}
+.dropdown > span:focus ~ ul
+{
+    display: block;
 }
 .price
 {
@@ -138,7 +197,7 @@
 }
 .products
 {
-    height: rem(860);
+    height: rem(1300);
     width: 75%;
     position: absolute;
     display: flex;
@@ -156,15 +215,25 @@
     padding-top: 20%; 
     margin: 0 auto;
 }
+.shoe p
+{
+    padding: 0 0 0 10%;   
+}
+.shoe:hover
+{
+    background-color: rgba(0, 0, 255, 0.507);
+    color: white;
+}
 .down
 {
     height: rem(50);
     width: 100%;
     position: absolute;
     display: flex;
-    margin-top: rem(1250);
+    margin-top: rem(1690);
     top: 0;
     left: 0; 
+    text-align: center;
 }
 .fill_1
 {
