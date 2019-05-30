@@ -1,133 +1,208 @@
 @import "variables.scss";
 
-.shipping__content{
-    margin-top: rem(70);
-    position: absolute;
-    top: 0;
-    left:0;
-    display: flex;
-    flex-direction: row;
-    height: rem(420);
-    width: 100%;
-    border-bottom: rem($header-border-width) solid lightgray;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: rem(0.3);
-    font-family: "Oswald", Verdana, sans-serif;
-}
-
 
 //main sections
 
 
-.shipping__section{
-    position: absolute;
-    top: 0;
-    left:0;
+.shipping__content{
     display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    height: rem(420);
-    width: 50%;
-    border-right: rem($header-border-width) solid lightgray;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 
 //sign in section (left)
 
-.shipping__title{
-    font-size: rem(20);
-    position: relative;
-    top: 0;
-    left:0;
-    display: flex;
-    flex-direction: column;
-    height: rem(5);
-    width: 35%;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: rem(-50);
-}
 
-.shipping__udnertext{
-    font-size: rem(15);
-    position: relative;
-    top: 0;
-    left:0;
-    display: flex;
-    flex-direction: column;
-    height: rem(1);
-    width: 35%;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    color: $color-terciary;
-    margin-top: rem(-60);
-}
-
-
-.shipping__signinbox{
-    position: relative;
-    top: 0;
-    left:0;
-    display: flex;
-    flex-direction: column;
-    height: rem(180);
-    width: 35%;
-    border-radius: 10%;
-    border: rem($header-border-width) solid lightgray;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-}
-
-.shipping__signinbox-info{
-    position: relative;
-    top: 0;
-    left:0;
+.shipping__section{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: rem(60);
-    width: 100%;
-    border-bottom: rem($header-border-width) solid lightgray;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
+    height: rem(420);
 
-.shipping__signinbox-button{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    height: rem(60);
-    width: 100%;
-    cursor: pointer;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    transition: $box-transition-time;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-
-    &:hover{
-        background-color: $color-terciary; 
-        color: $heading-color;
-        transition: $box-transition-time;    
+    &:not(:last-child){
+        border-right: rem(2) solid $shipping-borders-color;
     }
 }
 
-input[type=shipping_text] {
+.shipping__left{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: $color-secondary;
+
+    &--title{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        color: black;
+        font-size: rem(20);
+    }
+
+    &--signinInfo{
+        min-width: 33.333333%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        &--email{
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: rem(60);
+            border-top-left-radius: rem(10);
+            border-top-right-radius: rem(10);
+            border: rem(2) solid $shipping-borders-color;
+            border-bottom: none;
+        }
+
+        &--password{
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: rem(60);
+            border: rem(2) solid $shipping-borders-color;
+            border-bottom: none;
+        }
+
+        &--button{
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: rem(60);
+            border: rem(2) solid $shipping-borders-color;
+            border-bottom-left-radius: rem(10);
+            border-bottom-right-radius: rem(10);
+            transition: $box-transition-time;
+            
+            &:hover{
+                background-color: $color-terciary;
+                color: $color-secondary;
+                border: rem(2) solid $color-terciary;
+            }
+        }
+    }
+
+    &--bottomText{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        color: $color-terciary;
+        font-size: rem(15);
+        margin-top: rem(-80);
+    }
+}
+
+
+//form section (right)
+
+
+.shipping__right{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: $color-secondary;
+
+    &--title{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        color: black;
+        font-size: rem(20);
+        flex-wrap: wrap;
+    }
+
+    &--form{
+        min-width: 66.666666%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        &--top{
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            height: rem(60);
+            border-bottom: none;
+
+            &--left{
+                width: 100%;
+                border-top-left-radius: rem(10);
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: row;
+                height: rem(60);
+                border: rem(2) solid $shipping-borders-color;
+                border-bottom: none;
+            }
+
+            &--right{
+                width: 100%;
+                border-top-right-radius: rem(10);
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: row;
+                height: rem(60);
+                border: rem(2) solid $shipping-borders-color;
+                border-bottom: none;
+                border-left: none;
+            }
+        }
+
+        &--middle{
+            flex-wrap: wrap;
+            flex-direction: row;
+            display: flex;
+            height: rem(60);
+            border: rem(2) solid $shipping-borders-color;
+            border-bottom: none;   
+        }
+
+        &--bottom{
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: rem(60);
+            border: rem(2) solid $shipping-borders-color;
+            border-bottom-left-radius: rem(10);
+            border-bottom-right-radius: rem(10);
+        }
+    }
+}
+
+
+
+//input text style
+
+
+input[type=signinInfo] {
+    height: 90%;
     width: 90%;
-    padding: 12px 20px;
     border: none;
     color: lightgrey;
+    outline: none;
   }
 
 

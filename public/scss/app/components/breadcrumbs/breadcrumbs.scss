@@ -7,8 +7,11 @@
 .breadcrumbs__item{
     position: relative;
     text-decoration: none;
+    color: $breadcrumbs-text-color;
 
-
+    &:not(:first-child){
+        margin-left: rem(20);
+    }
 
     &:not(:last-child){
         margin-right: rem(20);

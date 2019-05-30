@@ -58,136 +58,179 @@
 //middle part products
 
 
-.cart__items{
+.cart__item{
     display: flex;
     flex-direction: row;
-    height: rem(140);
-    border-bottom: rem($header-border-width) solid lightgray;
-}
+    border-bottom: rem(2) solid $cart-itembox-border-color;
+    
+    &--picture{
+        display: flex;
+        height: $itembox-height;
+        flex-grow: 2;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
 
-.items__picture{
-    display: flex;
-    height: rem(140);
-    flex-grow: 3;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    &--itemDescription{
+        display: flex;
+        flex-direction: column;
+        height: $itembox-height;
+        flex-grow: 2;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
 
-}
+        &--productName{
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            align-items: center;
+            align-content: center;
+            justify-content: left;
+            color: black;
+            padding-top: 50%;
+        }
 
-.items__priceDefault{
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    height: rem(140);
-    flex-grow: 1;
-    color: lightgrey;
-}
+        &--brand{
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            align-items: center;
+            align-content: center;
+            justify-content: left;
+            color: lightgray;
+            padding-bottom: 50%;
+        }
+    }
 
-.items__count{
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-    display: flex;
-    height: rem(140);
-    flex-grow: 2;
-    color: $color-terciary;
-}
+    &--defaultPrice{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        height: $itembox-height;
+        flex-grow: 1;
+        color: lightgrey;
+    }
 
-.items__storno{
-    align-items: center;
-    align-content: center;
-    justify-content: left;
-    display: flex;
-    height: rem(140);
-    flex-grow: 2;       
+    &--quantity{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        height: $itembox-height;
+        flex-grow: 1;
+        color: lightgrey;
+
+        &--insideBox{
+            position: relative;
+            display: flex;
+            border-radius: rem(50);
+            align-items: center;
+            align-content: center;
+            justify-content: space-evenly;
+            border: rem(2) solid $cart-itembox-border-color;
+            height: rem(50);
+            width: rem(120);
+            background-color: $color-secondary;
+        }
+    }
+
+    &--modifiedPrice{
+        align-items: center;
+        align-content: center;
+        justify-content: left;
+        display: flex;
+        height: $itembox-height;
+        flex-grow: 1;
+        color: $color-terciary;
+        padding-left: 10%;    
+    }
+
+    &--storno{
+        align-items: center;
+        align-content: center;
+        justify-content: left;
+        display: flex;
+        height: $itembox-height;
+        flex-grow: 1;
+    }
 }
 
 
 //middle part total
 
-
-.total__text{
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+.cart__itemSum{
     display: flex;
-    height: rem(140);
-    flex-grow: 6;    
-}
+    flex-direction: row;
+    height: $itembox-height;
+    border-bottom: rem(2) solid $cart-itembox-border-color;
 
-.total__value-text{
-    align-items: center;
-    align-content: center;
-    justify-content: right;
-    display: flex;
-    height: rem(140);
-    flex-grow: 0.9;
-    color: black;
-}
+    &--text{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        height: $itembox-height;
+        flex-grow: 3.1;  
+    }
+    
+    &--valueLabel{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        height: $itembox-height;
+        flex-grow: 0.9;
+        color: black;
+    }
 
-.total__value-number{
-    align-items: center;
-    align-content: center;
-    justify-content: left;
-    display: flex;
-    height: rem(140);
-    flex-grow: 1;
-    color: $color-terciary;
-}
+    &--valueSum{
+        align-items: center;
+        align-content: center;
+        justify-content: left;
+        display: flex;
+        height: $itembox-height;
+        flex-grow: 1;
+        color: $color-terciary;
+    }
 
-.total__refresh{
-    align-items: center;
-    align-content: center;
-    justify-content: left;
-    display: flex;
-    height: rem(140);
-    flex-grow: 3.35;
+    &--refresh{
+        align-items: center;
+        align-content: center;
+        justify-content: left;
+        display: flex;
+        height: $itembox-height;
+        flex-grow: 1;
+    }
 }
 
 
 //bottom part
 
-.cart_next{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: z-index(header);
+.cart__bottom{
+    position: relative; 
     display: flex;
     flex-direction: row;
     width: 100%;
     background-color: $color-secondary;
-    @include linear-interpolation-chain(height, $header-heights);
-    min-height: rem(70);
-    color: grey;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: rem(0.3);
-    font-family: "Oswald", Verdana, sans-serif;
-    text-align: center;
-    line-height: 450%;
-    margin-top: rem(490);
-    height: rem(70);   
+    height: rem(70);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: $box-transition-time;
+    
+    &:hover{
+        background-color: $color-terciary;
+        color: $color-secondary;
+    }
 }
 
 
 //buttons
 
-
-.cart__counter{
-    @include linear-interpolation-chain(height, $header-heights);
-    display: flex;
-    border-radius: rem(50);
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-    border: rem($header-border-width) solid lightgray;
-    height: rem(30);
-    width: rem(120);
-    background-color: white;
-}
 
 .cart__styled-button{
     color: grey;
@@ -196,9 +239,10 @@
     height: rem(30);
     width: rem(30);
     background: none;
+    cursor: pointer;
 }
 
-.cart__items-variable{
+.cart__item-variable{
     outline: none;
     border: none;
     border-radius: 100%;
@@ -214,6 +258,7 @@
     height: rem(50);
     width: rem(50);
     background: none;
+    cursor: pointer;
 }
 
 

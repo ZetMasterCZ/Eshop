@@ -179,7 +179,7 @@ and open the template in the editor.
         </header>
         <main class="main">
             <header class="main__header">
-                <section class="main__container_cart">
+                <section class="main__container">
                     <h1 class="heading heading--1 heading--center">
                         Your cart
                     </h1>
@@ -191,43 +191,63 @@ and open the template in the editor.
                     </div>
                 </section>
             </header>
-            <section class="main__container_cart main__container_cart--content_cart">
+            <section class="main__container main__container--content">
                 <section class="cart">
-                    <span class="cart__button">
-                        Checkout
-                    </span>
-                    <span class="cart__button">
-                        Shipping information
-                    </span>
-                    <span class="cart__button">
-                        Payment
-                    </span>
-                </section>
-
-                <section class="shipping__content">
-                    <section class="shipping__section">
-                            <span class="shipping__title">Sign in</span>
-
-                        <div class="shipping__signinbox">
-                            <div class="shipping__signinbox-info">
-                                <input type="shipping_text" value="E-mail" id="signin-email" name="signin-email">
-                            </div>
-                            <div class="shipping__signinbox-info">
-                                <input type="shipping_text" value="Password" id="signin-password" name="signin-password">
-                            </div>
-                            <div class="shipping__signinbox-button">
-                                Sign in
-                            </div>
-                        </div>
-                        <span class="shipping__udnertext">Forgot your password?</span>
+                    <section class="cart__breadcrumbs">
+                        <a href="#" class="cart__breadcrumb cart__breadcrumb--disabled">
+                            Checkout
+                        </a>
+                        <a href="#" class="cart__breadcrumb cart__breadcrumb--active">
+                            Shipping information
+                        </a>
+                        <a href="#" class="cart__breadcrumb cart__breadcrumb--disabled">
+                            Payment
+                        </a>
                     </section>
                     
-                    <section class="shipping__section">
+                <section class="shipping__content">
 
+                    <section class="shipping__section">
+                        <div class="shipping__left">
+                            <span class="shipping__left--title">Sign in</span>
+                            <div class="shipping__left--signinInfo">
+                                <span class="shipping__left--signinInfo--email">
+                                    <input type="signinInfo" value="E-mail"></span>
+                                <span class="shipping__left--signinInfo--password">
+                                        <input type="signinInfo" value="Password"></span>
+                                </span>
+                                <span class="shipping__left--signinInfo--button">Sign in</span>
+                            </div>
+                            <span class="shipping__left--bottomText">Forgot your password?</span>
+                        </div>
                     </section>
+
+                    <section class="shipping__section">
+                        <div class="shipping__right">
+                            <span class="shipping__right--title">Fill all the fields</span>
+                            <div class="shipping__right--form">
+                                <div class="shipping__right--form--top">
+                                    <div class="shipping__right--form--top">
+                                        <div class="shipping__right--form--top--left"></div>
+                                        <div class="shipping__right--form--top--right"></div>
+                                    </div>
+                                </div>
+                                <div class="shipping__right--form--middle"></div>
+                                <div class="shipping__right--form--middle"></div>
+                                <div class="shipping__right--form--middle"></div>
+                                <div class="shipping__right--form--middle"></div>
+                                <div class="shipping__right--form--bottom"></div>
+                            </div>
+                        </div>
+                    </section>
+
                 </section>
 
+                </section>
             </section>
         </main>
+        <script src="public/scss/app/components/cart/scripts.js" type="text/javascript">
+
+        </script>
     </body>
 </html>
