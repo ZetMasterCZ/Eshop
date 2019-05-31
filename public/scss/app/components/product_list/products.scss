@@ -34,12 +34,64 @@
 }
 .item__name
 {
-    padding: 6% 0 0 11%;
+    //padding: 6% 0 0 11%;
     font-size: rem(16);
 }
 .item__price
 {
-    padding: 2% 76% 0 11%; 
+    //padding: 2% 76% 0 11%; 
     color: blue;
     font-size: rem(12);
+}
+.products__bottom
+{
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.point_left
+{
+    flex-grow: 1;    
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+}
+.fill_2
+{
+    flex-grow: 5;
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
+}
+.page_1
+{
+    flex-grow: 1;
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);  
+}
+.page_2
+{
+    flex-grow: 1;
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+}
+.page_3
+{
+    flex-grow: 1; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+}
+.page_4
+{
+    flex-grow: 1;
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);  
+}
+.page_5
+{
+    flex-grow: 1;
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200);
+}
+.fill_3
+{
+    flex-grow: 4; 
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
+}
+.point_right
+{
+    flex-grow: 1;
+    border: rem(0.1) solid rgba(0, 0, 0, 0.200); 
 }
